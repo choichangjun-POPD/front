@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<link rel="icon" type="image/x-icon" href=".favicon.ico">
+<html>
+	<head>
+		<title>최창준의 포트폴리오</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="script/jquery-3.5.1.js"></script>
+		<script src="script/jquery-3.5.1.min.js"></script>
+		<script>
+
+			$(function(){
+
+				function menuf()
+				{
+					if(this.innerHTML == "메인")
+						$("#main").load("first.html");
+
+					else if(this.innerHTML == "자기소개서 보기")
+						$("#main").load("second.html");
+
+					else if(this.innerHTML == "프로그램 보기")
+						$("#main").load("third.html");
+				}
+
+				var menu = document.getElementsByClassName("menu");
+
+				for(var i = 0; i < menu.length; i++)
+					menu[i].addEventListener("click", menuf);
+				
+			});
+		</script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><button class="menu">메인</button></li>
+							<li><button class="menu">자기소개서 보기</button></li>
+							<li><button class="menu">프로그램 보기</button></li>
+							<li><button class="menub"><a href=".\other\이력서.html" target="_blank">이력서 보러가기(새창)</a></button></li>
+							<li><button class="menub"><a href="https://github.com/" target="_blank">깃허브 사이트(새창)</a></button></li>
+							<li><button class="menub"><a href="https://opentutorials.org/course/1" target="_blank">생활코딩 사이트(새창)</a></button></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>안녕하세요!</h2>
+										</header>
+										<p><b>최창준</b>의 포트폴리오 입니다. <b>상단</b>의 <b>버튼</b></a>을 이용해주세요!</p>
+										<p><h6>* 인터넷 익스플로러의 경우, 지원이 종료되고 있어 사이트가 정상 작동하지 않을 수 있습니다.</h6>
+											<h6>동작이 잘 안되신다면 번거로우시더라도 크롬이나, 엣지 등 최신 브라우저로 이용 부탁드립니다!</h6></p>
+									</div>
+									<span class="image"><img src=".\images\최창준.jpg" alt="pic not found" /></span>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer / 하단 -->
+					<footer id="footer">
+						<section>
+							<h2>Contact Information</h2>
+							<dl class="alt">
+								<dt>Phone</dt>
+								<dd>010-9462-7094</dd>
+								<dt>Email</dt>
+								<dd>ccj7094@naver.com</a></dd>
+								<dt>Github</dt>
+								<dd><a href="https://github.com/ChangJunChoi-PT/website"  target="_blank">ChangJunChoi-PT</a></dd>
+							</dl>
+							
+						</section>
+					</footer>
+
+			</div>
+
+	
+	</body>
+</html>
